@@ -1,0 +1,21 @@
+2024-08-23 02:55:32,941 INFO ipython === bench console session ===
+2024-08-23 02:55:32,942 INFO ipython frappe.db.get_value("Driver")
+2024-08-23 02:55:32,942 INFO ipython frappe.db.get_value("Driver", "DR-002", "last_name")
+2024-08-23 02:55:32,942 INFO ipython frappe.getDoc("Driver", "DR-001")
+2024-08-23 02:55:32,942 INFO ipython frappe.get_Doc("Driver", "DR-001")
+2024-08-23 02:55:32,943 INFO ipython frappe.get_doc("Driver", "DR-001")
+2024-08-23 02:55:32,943 INFO ipython d =frappe.get_doc("Driver", "DR-001")
+2024-08-23 02:55:32,943 INFO ipython d.first_name
+2024-08-23 02:55:32,943 INFO ipython === session end ===
+2024-09-01 23:46:33,684 INFO ipython === bench console session ===
+2024-09-01 23:46:33,689 INFO ipython frappe.get_all("Ride Booking", fields= ["total_amount", "vehicle"])
+2024-09-01 23:46:33,689 INFO ipython frappe.get_all("Ride Booking", fields= ["total_amount", "vehicle"],)
+2024-09-01 23:46:33,689 INFO ipython frappe.get_all("Ride Booking", fields= ["total_amount", "vehicle"], filters={"docstatus":("<", 2)})
+2024-09-01 23:46:33,689 INFO ipython frappe.get_all("Ride Booking", fields= ["total_amount", "vehicle"], filters={"docstatus":("<", 2)})
+2024-09-01 23:46:33,689 INFO ipython frappe.db.commit()
+2024-09-01 23:46:33,689 INFO ipython frappe.db.commit()
+2024-09-01 23:46:33,696 INFO ipython frappe.get_all("Ride Booking", fields= ["total_amount", "vehicle"], filters={"docstatus":("<", 2)})
+2024-09-01 23:46:33,696 INFO ipython frappe.get_all("Ride Booking", fields= ["total_amount", "vehicle.make"], filters={"docstatus":("<", 2)})
+2024-09-01 23:46:33,696 INFO ipython frappe.get_all("Ride Booking", fields= ["SUM(total_amount) AS total_revenue", "vehicle.make"], filters={"docstatus":("<", 2)})
+2024-09-01 23:46:33,696 INFO ipython frappe.get_all("Ride Booking", fields= ["SUM(total_amount) AS total_revenue", "vehicle.make"], filters={"docstatus":("<", 2)}, group_by="make")
+2024-09-01 23:46:33,696 INFO ipython === session end ===

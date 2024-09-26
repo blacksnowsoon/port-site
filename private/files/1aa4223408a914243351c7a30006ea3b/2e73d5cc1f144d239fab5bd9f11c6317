@@ -1,0 +1,22 @@
+bench start
+
+#open firfox localhost:8000
+
+userName: Administrator
+pass: admin
+
+
+#to install app from market
+bench --site main.local install-app app1 app2 app3
+
+#to uninstall app 
+bench --site main.local uninstall-app app1
+
+#get from github
+bench get-app URL-to-the-app
+
+#to allow server scripts run
+bench set-config -g server_script_enabled 1
+
+#to fix low memory
+sudo sysctl vm.overcommit_memory=1
